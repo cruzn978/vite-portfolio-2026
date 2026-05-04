@@ -3,7 +3,7 @@ import "./App.css";
 function App() {
   return (
     <div>
-      <section className="h-screen bg-lime-500">
+      <section className="p-12 m-12 h-screen bg-exampleBlue">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolore
           aspernatur id accusantium adipisci molestias unde officia eum pariatur
