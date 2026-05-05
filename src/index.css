@@ -1,23 +1,30 @@
 /* Global styles */
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-/* FONTS */
-/* .work-sans-titles {
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: normal;
+/* VARS */
+:root {
+  /* Colors */
+  --color-accent-orange: #e8944a;
+  --color-beige-light: #e8dcc8;
+  --color-beige-medium: #c9b8a0;
+  --color-navy-dark: #1a2952;
+
+  /* Fonts */
+  --font-primary: "Work Sans", sans-serif;
+  --font-titles: "Prompt", sans-serif;
+  --font-accent: "Passions Conflict", sans-serif;
 }
 
-.dm-sans-content {
-  font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-} */
-
 body {
-  /* margin: 0; */
-  font-family: "DM Sans", sans-serif;
-  /* background: #f5f5f5; */
+  margin: 0;
+  font-family: var(--font-primary);
+}
+
+.hero-title {
+  font-family: var(--font-titles);
+  font-size: 12em;
+  font-weight: 900;
+  color: var(--color-navy-dark);
+  text-align: left;
+  letter-spacing: 10px;
 }
