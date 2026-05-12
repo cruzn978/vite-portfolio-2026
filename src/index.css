@@ -18,13 +18,15 @@
 body {
   margin: 0;
   font-family: var(--font-primary);
+  background-color: var(--color-beige-light);
 }
 
 .hero-title {
   font-family: var(--font-titles);
-  font-size: 12em;
+  font-size: 12vw;
   font-weight: 900;
   color: var(--color-navy-dark);
-  text-align: left;
-  letter-spacing: 10px;
+  text-align: center;
+  letter-spacing: 0px;
+  line-height: 0.8;
 }

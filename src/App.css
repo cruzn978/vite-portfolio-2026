@@ -1,4 +1,4 @@
-/* reg styles on top of App.css that don't include tailwind */
+/* reg styles on top of App.css*/
 
 .bottom-title {
   margin-top: -80px;
@@ -16,4 +16,22 @@
   /* display: flex;
   justify-content: center;
   align-items: center; */
+}
+
+.hero-container {
+  height: 80vh;
+}
+
+.sticky-container {
+  padding: 0px 20px 0px 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(25px);
+  /* background-color: #0000002c; */
+  background-color: rgb(0, 0, 0, 0.4);
+}
+
+a.nav-link {
+  color: var(--color-accent-orange);
+  /* font-weight: 500; */
+  font-size: 18px;
 }
