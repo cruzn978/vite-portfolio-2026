@@ -12,7 +12,7 @@ export default function Projects({ projectsSectionRef }) {
       <Row>
         <Col>
           <h1 className="hero-title text-navy-dark justify-content-center">
-            <span className="text-navy-dark">PROJECTS</span> <br />
+            {/* <span className="text-navy-dark">PROJECTS</span> <br /> */}
           </h1>
         </Col>
       </Row>

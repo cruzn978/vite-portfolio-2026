@@ -1,32 +1,47 @@
 /* Global styles */
-@import url("https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reenie+Beanie&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 /* VARS */
 :root {
   /* Colors */
-  --color-accent-orange: #e98630;
-  --color-beige-light: #e8dcc8dc;
+  --color-accent-orange: #fb7500;
+  --color-accent-light-orange: #e98630;
+
+  --color-beige-light: #fdeacbdc;
   --color-beige-medium: #c9b8a0;
   --color-navy-dark: #1a2952;
+  --color-test: #fb7500;
 
   /* Fonts */
   --font-primary: "Work Sans", sans-serif;
+  --font-secondary: "Oxanium", sans-serif;
   --font-titles: "Prompt", sans-serif;
-  --font-accent: "Passions Conflict", sans-serif;
+  --font-accent: "Reenie Beanie", cursive;
 }
 
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: var(--font-primary);
   background-color: var(--color-beige-light);
+  /* background-image: linear-gradient(#c79b9b, #3068e9); */
 }
 
 .hero-title {
   font-family: var(--font-titles);
-  font-size: 12vw;
+  font-size: 13vw;
   font-weight: 900;
   color: var(--color-navy-dark);
   text-align: center;
   letter-spacing: 0px;
   line-height: 0.8;
+}
+
+.creative-title {
+  font-family: var(--font-accent);
+  color: var(--color-accent-orange);
+  font-size: 5vw;
+  font-weight: 300 !important;
+
+  /* text-transform: uppercase; */
 }

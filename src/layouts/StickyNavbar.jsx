@@ -13,9 +13,10 @@ function StickyNavbar({
   useEffect(() => {
     const handleScroll = () => {
       // Toggle transparency based on scroll position
-      if (window.scrollY > 50) {
+      if (window.scrollY > 1) {
         setIsTransparent(false);
       } else {
+        //else if at top of page, make transparent
         setIsTransparent(true);
       }
     };
@@ -27,24 +28,31 @@ function StickyNavbar({
   }, []);
 
   return (
-    <Navbar expand="lg" className="bg-transparent" sticky="top">
-      {/* <Navbar expand="lg" className={isTransparent ? "bg-transparent" : "bg-dark"} sticky="top"></Navbar> */}
-      <Container>
+    <Navbar expand="lg" className="" sticky="top">
+      <Container fluid className="nav-container">
         <Navbar.Brand href="#home" onClick={handleClickHero}>
-          nc
+          <div className={`link-container ${isTransparent ? "" : "link-top"}`}>
+            nc
+          </div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          {/* <div> */}
-
           <Nav
             className={`me-auto mx-auto sticky-container ${isTransparent ? "bg-transparent" : "navbar-bg-dark"}`}
           >
             <Nav.Link href="#about" onClick={handleClickAbout}>
-              About
+              <div
+                className={`link-container ${isTransparent ? "" : "link-top"}`}
+              >
+                about
+              </div>
             </Nav.Link>
             <Nav.Link href="#projects" onClick={handleClickProjects}>
-              Projects
+              <div
+                className={`link-container ${isTransparent ? "" : "link-top"}`}
+              >
+                projects
+              </div>
             </Nav.Link>
           </Nav>
           {/* </div> */}

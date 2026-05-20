@@ -12,7 +12,7 @@ export default function About({ aboutSectionRef }) {
       <Row>
         <Col>
           <h1 className="hero-title text-navy-dark justify-content-center">
-            <span className="text-navy-dark">ABOUT</span> <br />
+            {/* <span className="text-navy-dark">ABOUT</span> <br /> */}
           </h1>
         </Col>
       </Row>

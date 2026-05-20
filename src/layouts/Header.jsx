@@ -1,10 +1,11 @@
 // import React from "react";
+import Container from "react-bootstrap/Container";
 
 export default function Header() {
   return (
     <div className="socials">
       <a
-        href="https://linkedin.com/in/yourprofile"
+        href="https://www.linkedin.com/in/cruzn978/"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="LinkedIn Profile"

@@ -4,7 +4,7 @@ import About from "./views/About";
 import Projects from "./views/Projects";
 
 import Header from "./layouts/Header";
-import Navbar from "./layouts/StickyNavbar";
+import StickyNavbar from "./layouts/StickyNavbar";
 import Footer from "./layouts/Footer";
 import { useRef } from "react";
 
@@ -14,7 +14,10 @@ function App() {
   const heroSectionRef = useRef(null);
 
   const handleClickHero = () => {
-    heroSectionRef.current?.scrollIntoView({ behavior: "smooth" });
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   const handleClickAbout = () => {
@@ -28,7 +31,7 @@ function App() {
   return (
     <div className="app">
       <Header />
-      <Navbar
+      <StickyNavbar
         handleClickAbout={handleClickAbout}
         handleClickProjects={handleClickProjects}
         handleClickHero={handleClickHero}
