@@ -23,7 +23,7 @@ export default function Hero({ heroSectionRef }) {
           <div className="profileImgContainer">
             <img
               className="circle"
-              src="src/assets/Nichole.jpg"
+              src="/assets/Nichole.jpg"
               alt="Nichole Cruzalegui"
             />
           </div>
