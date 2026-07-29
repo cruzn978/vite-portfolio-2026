@@ -1,13 +1,13 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Marquee from "../layouts/Marquee";
 
 export default function Hero({ heroSectionRef }) {
   return (
     <Container
       fluid
       className="hero-container justify-content-center"
+      id="hero-section"
       ref={heroSectionRef}
     >
       <Row className="hero-row">
@@ -18,7 +18,6 @@ export default function Hero({ heroSectionRef }) {
           </h1>
         </Col>
       </Row>
-      <Marquee />
       <Row className="d-flex">
         <Col className="d-flex align-items-center justify-content-center">
           <div className="profileImgContainer">

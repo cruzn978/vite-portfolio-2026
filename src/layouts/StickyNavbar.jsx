@@ -7,6 +7,8 @@ function StickyNavbar({
   handleClickAbout,
   handleClickProjects,
   handleClickHero,
+  handleClickExtras,
+  handleClickContact,
 }) {
   const [isTransparent, setIsTransparent] = useState(true);
 
@@ -31,9 +33,7 @@ function StickyNavbar({
     <Navbar expand="lg" className="" sticky="top">
       <Container fluid className="nav-container">
         <Navbar.Brand href="#home" onClick={handleClickHero}>
-          <div className={`link-container ${isTransparent ? "" : "link-top"}`}>
-            nc
-          </div>
+          <div className="link-container">nc</div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -52,6 +52,21 @@ function StickyNavbar({
                 className={`link-container ${isTransparent ? "" : "link-top"}`}
               >
                 projects
+              </div>
+            </Nav.Link>
+
+            <Nav.Link href="#extras" onClick={handleClickExtras}>
+              <div
+                className={`link-container ${isTransparent ? "" : "link-top"}`}
+              >
+                extras
+              </div>
+            </Nav.Link>
+            <Nav.Link href="#contact" onClick={handleClickContact}>
+              <div
+                className={`link-container ${isTransparent ? "" : "link-top"}`}
+              >
+                contact
               </div>
             </Nav.Link>
           </Nav>

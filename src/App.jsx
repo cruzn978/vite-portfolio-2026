@@ -2,6 +2,9 @@ import "./App.css";
 import Hero from "./views/Hero";
 import About from "./views/About";
 import Projects from "./views/Projects";
+import Extras from "./views/Extras";
+
+import MarqueeBanners from "./layouts/MarqueeBanners";
 
 import Header from "./layouts/Header";
 import StickyNavbar from "./layouts/StickyNavbar";
@@ -12,6 +15,8 @@ function App() {
   const aboutSectionRef = useRef(null);
   const projectsSectionRef = useRef(null);
   const heroSectionRef = useRef(null);
+  const extrasSectionRef = useRef(null);
+  const contactSectionRef = useRef(null);
 
   const handleClickHero = () => {
     window.scrollTo({
@@ -28,6 +33,14 @@ function App() {
     projectsSectionRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const handleClickExtras = () => {
+    extrasSectionRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleClickContact = () => {
+    contactSectionRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="app">
       <Header />
@@ -35,11 +48,15 @@ function App() {
         handleClickAbout={handleClickAbout}
         handleClickProjects={handleClickProjects}
         handleClickHero={handleClickHero}
+        handleClickExtras={handleClickExtras}
+        handleClickContact={handleClickContact}
       />
       <Hero heroSectionRef={heroSectionRef} />
       <About aboutSectionRef={aboutSectionRef} />
+      <MarqueeBanners />
       <Projects projectsSectionRef={projectsSectionRef} />
-      <Footer />
+      <Extras extrasSectionRef={extrasSectionRef} />
+      <Footer contactSectionRef={contactSectionRef} />
     </div>
   );
 }

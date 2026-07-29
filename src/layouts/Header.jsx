@@ -1,5 +1,4 @@
 // import React from "react";
-import Container from "react-bootstrap/Container";
 
 export default function Header() {
   return (
@@ -14,6 +13,10 @@ export default function Header() {
       </a>
       <a href="/resume.pdf" download aria-label="Download Resume">
         <img src="/resume2.svg" alt="Resume" className="social-icon" />
+      </a>
+
+      <a href="mailto:cruzalegui.nichole@gmail.com" aria-label="Email">
+        <img src="/email2.svg" alt="Email" className="social-icon" />
       </a>
     </div>
   );
