@@ -13,7 +13,7 @@ export default function Hero({ heroSectionRef }) {
       <Row className="hero-row">
         <Col className="">
           <h1 className="hero-title text-navy-dark justify-content-center">
-            <span className="text-navy-dark">NICHOLE d</span> <br />
+            <span className="text-navy-dark">NICHOLE</span> <br />
             <span className="text-navy-dark">CRUZALEGUI</span>
           </h1>
         </Col>
