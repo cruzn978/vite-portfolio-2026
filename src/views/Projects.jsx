@@ -146,6 +146,20 @@ export default function Projects({ projectsSectionRef }) {
           <h5 className="project-description italic">
             Stack: TensorFlow, DatamuseAPI, Workbox, Bootstrap, Shards, React
           </h5>
+          <h5 className="project-description italic">
+            <a
+              href="https://github.com/cruzn978/haicoo-demo"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="github-link"
+            >
+              <img
+                src="/github.svg"
+                alt="GitHub"
+                className="social-icon github-link"
+              />
+            </a>
+          </h5>
         </Col>
       </Row>
     </Container>

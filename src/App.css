@@ -438,6 +438,20 @@ p {
 audio {
   width: 100%;
 }
+
+.github-link {
+  scale: 100%;
+  transition: scale 0.1s ease;
+}
+
+.github-link:hover {
+  scale: 1.03;
+}
+
+.github-link:active {
+  scale: 0.97;
+}
+
 /* Base Badge Design */
 .spotify-badge {
   display: inline-flex;
@@ -545,7 +559,9 @@ audio {
   }
 
   .contact-options {
-    font-size: 4vw;
+    font-size: 3.5vw;
+    padding-left: 0px;
+    margin-left: 10px;
   }
 
   .mobile-non-hero-title {

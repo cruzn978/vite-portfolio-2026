@@ -38,6 +38,15 @@ function Footer({ contactSectionRef }) {
             >
               <h3 className="contact-options">resume</h3>
             </a>
+
+            <a
+              href="https://github.com/cruzn978"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub Profile"
+            >
+              <h3 className="contact-options">github</h3>
+            </a>
           </Col>
         </Row>
         <Row>
