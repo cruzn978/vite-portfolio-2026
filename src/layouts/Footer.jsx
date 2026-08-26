@@ -17,7 +17,7 @@ function Footer({ contactSectionRef }) {
               id="footer-title"
               className="hero-title text-align-left mt-5 pt-3 mobile-non-hero-title"
             >
-              contact
+              Contact
             </h2>
             <a href="mailto:cruzalegui.nichole@gmail.com" aria-label="Email">
               <h3 className="contact-options">email</h3>

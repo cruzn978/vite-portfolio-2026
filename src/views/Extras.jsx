@@ -15,7 +15,7 @@ export default function Extras({ extrasSectionRef }) {
             id="extras-title"
             className="hero-title text-navy-dark text-align-left mt-5 pt-3 mobile-non-hero-title"
           >
-            extras
+            Extras
           </h2>
           <p className="text-navy-dark mt-3">
             Like many people nowadays, I climb plastic rocks for fitness! I also
