@@ -45,7 +45,8 @@
 }
 
 .navbar-bg-dark {
-  background-color: rgba(0, 0, 0, 0.259);
+  /* background-color: rgba(0, 0, 0, 0.259); */
+  background-color: #4a546fa3;
 }
 
 .navbar {
@@ -545,6 +546,19 @@ audio {
   }
 }
 
+@media (min-width: 992px) {
+  #projects-section {
+    padding-top: 2rem !important;
+  }
+
+  #about-section {
+    padding-top: 2rem !important;
+  }
+
+  #extras-section {
+    padding-top: 2rem !important;
+  }
+}
 /* LAPTOP QUERIES */
 @media (min-width: 992px) and (max-width: 1200px) {
   .add-on-titles {

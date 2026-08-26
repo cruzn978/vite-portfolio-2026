@@ -7,6 +7,7 @@ export default function Projects({ projectsSectionRef }) {
     <Container
       ref={projectsSectionRef}
       className="hero-container projects-container"
+      id="projects-section"
     >
       <h2
         id="projects-title"
