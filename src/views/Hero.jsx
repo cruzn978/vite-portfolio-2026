@@ -20,6 +20,17 @@ export default function Hero({ heroSectionRef }) {
       </Row>
       <Row className="d-flex">
         <Col className="d-flex align-items-center justify-content-center">
+          <div className="profileImgContainer-mobile">
+            <img
+              className="circle"
+              src="/assets/Nichole.jpg"
+              alt="Nichole Cruzalegui"
+            />
+          </div>
+        </Col>
+      </Row>
+      <Row className="d-flex">
+        <Col className="d-flex align-items-center justify-content-center">
           <div className="profileImgContainer">
             <img
               className="circle"
@@ -27,20 +38,23 @@ export default function Hero({ heroSectionRef }) {
               alt="Nichole Cruzalegui"
             />
           </div>
-          <div className="creative-title position-relative">
+
+          <div className="creative-title">
             Digital Developer
-            <span className="add-on-titles add-on-three position-absolute">
-              {" "}
-              + matcha enthusiast
-            </span>
-            <span className="add-on-titles add-on-two position-absolute">
-              {" "}
-              + music producer
-            </span>
-            <span className="add-on-titles position-absolute">
-              {" "}
-              + rock climber
-            </span>
+            <div className="span-container position-relative">
+              <span className="add-on-titles add-on-three position-absolute">
+                {" "}
+                + matcha enthusiast
+              </span>
+              <span className="add-on-titles add-on-two position-absolute">
+                {" "}
+                + music producer
+              </span>
+              <span className="add-on-titles position-absolute">
+                {" "}
+                + rock climber
+              </span>
+            </div>
           </div>
         </Col>
       </Row>

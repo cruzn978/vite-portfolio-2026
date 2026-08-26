@@ -11,7 +11,11 @@ export default function Header() {
       >
         <img src="/linkedin3.svg" alt="LinkedIn" className="social-icon" />
       </a>
-      <a href="/resume.pdf" download aria-label="Download Resume">
+      <a
+        href="/Nichole_Resume_download.pdf"
+        download
+        aria-label="Download Resume"
+      >
         <img src="/resume2.svg" alt="Resume" className="social-icon" />
       </a>
 

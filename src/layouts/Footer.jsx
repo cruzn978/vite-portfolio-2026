@@ -15,7 +15,7 @@ function Footer({ contactSectionRef }) {
           <Col>
             <h2
               id="footer-title"
-              className="hero-title text-align-left mt-5 pt-3"
+              className="hero-title text-align-left mt-5 pt-3 mobile-non-hero-title"
             >
               contact
             </h2>
@@ -31,7 +31,13 @@ function Footer({ contactSectionRef }) {
               <h3 className="contact-options">linkedin</h3>
             </a>
 
-            <h3 className="contact-options">resume</h3>
+            <a
+              href="/Nichole_Resume_download.pdf"
+              download
+              aria-label="Download Resume"
+            >
+              <h3 className="contact-options">resume</h3>
+            </a>
           </Col>
         </Row>
         <Row>

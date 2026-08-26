@@ -11,23 +11,26 @@ function StickyNavbar({
   handleClickContact,
 }) {
   const [isTransparent, setIsTransparent] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      // Toggle transparency based on scroll position
       if (window.scrollY > 1) {
         setIsTransparent(false);
       } else {
-        //else if at top of page, make transparent
         setIsTransparent(true);
       }
     };
 
     window.addEventListener("scroll", handleScroll);
 
-    // Cleanup listener on unmount
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const handleMenuItemClick = (callback) => {
+    callback();
+    setIsMenuOpen(false);
+  };
 
   return (
     <Navbar expand="lg" className="" sticky="top">
@@ -35,7 +38,60 @@ function StickyNavbar({
         <Navbar.Brand href="#home" onClick={handleClickHero}>
           <div className="link-container">nc</div>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
+        <button
+          type="button"
+          className={`navbar-toggler custom-mobile-toggle ${isMenuOpen ? "is-open" : ""}`}
+          onClick={() => setIsMenuOpen((prev) => !prev)}
+          aria-label="Toggle navigation"
+          aria-expanded={isMenuOpen}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+
+        <div
+          className={`mobile-menu-panel ${isMenuOpen ? "mobile-menu-panel-open" : ""}`}
+        >
+          <a
+            href="#about"
+            onClick={(e) => {
+              e.preventDefault();
+              handleMenuItemClick(handleClickAbout);
+            }}
+          >
+            about
+          </a>
+          <a
+            href="#projects"
+            onClick={(e) => {
+              e.preventDefault();
+              handleMenuItemClick(handleClickProjects);
+            }}
+          >
+            projects
+          </a>
+          <a
+            href="#extras"
+            onClick={(e) => {
+              e.preventDefault();
+              handleMenuItemClick(handleClickExtras);
+            }}
+          >
+            extras
+          </a>
+          <a
+            href="#contact"
+            onClick={(e) => {
+              e.preventDefault();
+              handleMenuItemClick(handleClickContact);
+            }}
+          >
+            contact
+          </a>
+        </div>
+
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav
             className={`me-auto mx-auto sticky-container ${isTransparent ? "bg-transparent" : "navbar-bg-dark"}`}
@@ -70,7 +126,6 @@ function StickyNavbar({
               </div>
             </Nav.Link>
           </Nav>
-          {/* </div> */}
         </Navbar.Collapse>
       </Container>
     </Navbar>

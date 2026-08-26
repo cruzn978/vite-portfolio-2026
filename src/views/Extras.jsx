@@ -13,7 +13,7 @@ export default function Extras({ extrasSectionRef }) {
         <Col>
           <h2
             id="extras-title"
-            className="hero-title text-navy-dark text-align-left mt-5 pt-3"
+            className="hero-title text-navy-dark text-align-left mt-5 pt-3 mobile-non-hero-title"
           >
             extras
           </h2>

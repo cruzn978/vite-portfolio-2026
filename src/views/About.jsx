@@ -13,7 +13,7 @@ export default function About({ aboutSectionRef }) {
         <Col>
           <h2
             id="about-title"
-            className="hero-title text-navy-dark text-align-left mt-5 pt-2"
+            className="hero-title text-navy-dark text-align-left mt-5 pt-2 mobile-non-hero-title"
           >
             ABOUT
           </h2>
@@ -41,6 +41,7 @@ export default function About({ aboutSectionRef }) {
             storytelling—and I'm always looking for opportunities to learn
             something new while building something useful.
           </p>
+          <p className="text-navy-dark">Here is a quick banner showcase!</p>
         </Col>
       </Row>
     </Container>

@@ -4,8 +4,14 @@ import Col from "react-bootstrap/Col";
 
 export default function Projects({ projectsSectionRef }) {
   return (
-    <Container ref={projectsSectionRef} className="hero-container">
-      <h2 id="projects-title" className="hero-title text-navy-dark mt-5 pt-2">
+    <Container
+      ref={projectsSectionRef}
+      className="hero-container projects-container"
+    >
+      <h2
+        id="projects-title"
+        className="hero-title text-navy-dark mt-5 pt-2 mobile-non-hero-title"
+      >
         PROJECTS
       </h2>
 
