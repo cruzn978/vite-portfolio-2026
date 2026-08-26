@@ -427,6 +427,98 @@ p {
   display: none;
 }
 
+.spotify-embed-container {
+  width: min(100%, 520px);
+}
+
+.audio-player-container {
+  width: min(100%, 520px);
+}
+
+audio {
+  width: 100%;
+}
+/* Base Badge Design */
+.spotify-badge {
+  display: inline-flex;
+  align-items: center;
+  background-color: #000000; /* Sleek black background */
+  border: 1px solid #282828;
+  border-radius: 8px; /* Clean pill or rounded-rectangle shape */
+  padding: 8px 16px;
+  text-decoration: none;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+  max-width: fit-content;
+  box-sizing: border-box;
+  display: none;
+}
+
+/* Hover state effect */
+.spotify-badge:hover {
+  background-color: #1a1a1a;
+  transform: translateY(-1px);
+}
+
+/* Icon Sizing */
+.spotify-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  flex-shrink: 0; /* Prevents icon from squishing */
+}
+
+/* Typography Container */
+.spotify-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* "Listen on" line */
+.spotify-subtext {
+  color: #a7a7a7;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  line-height: 1.2;
+}
+
+/* "Spotify" line */
+.spotify-maintext {
+  color: #ffffff;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Micro-screen optimization (Screens under 319px) */
+@media (max-width: 319px) {
+  .spotify-badge {
+    padding: 6px 10px;
+    border-radius: 6px;
+  }
+
+  .spotify-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+  }
+
+  .spotify-subtext {
+    display: none; /* Completely removes the top row to save vertical space */
+  }
+
+  .spotify-maintext {
+    font-size: 12px; /* Scales down the text to prevent overflows */
+  }
+}
 /* LARGE MOBILE QUERIES */
 @media (min-width: 1400px) {
   .container,
@@ -559,6 +651,13 @@ p {
 
 /* SMALL MOBILE QUERIES */
 @media (max-width: 576px) {
+  .spotify-badge {
+    display: inline-flex;
+  }
+
+  .spotify-embed-container {
+    display: none;
+  }
   .contact-options {
     font-size: 18px;
     padding-left: 0px;
@@ -601,6 +700,11 @@ p {
 
 /* TINY MOBILE QUERIES */
 @media (max-width: 300px) {
+  .spotify-embed-container {
+    /* display: none; */
+    overflow-x: hidden;
+    overflow: hidden;
+  }
   .hero-title {
     font-size: 10vw;
   }
