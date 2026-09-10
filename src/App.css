@@ -511,9 +511,6 @@ audio {
   line-height: 1.2;
 }
 
-.col {
-  min-height: 350px;
-}
 /* Micro-screen optimization (Screens under 319px) */
 @media (max-width: 319px) {
   .spotify-badge {
@@ -769,5 +766,12 @@ audio {
 
   .socials {
     display: none;
+  }
+}
+
+/* LANDSCAPE */
+@media (max-height: 500px) {
+  .footer-col {
+    min-height: 350px;
   }
 }

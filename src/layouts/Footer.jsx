@@ -12,7 +12,7 @@ function Footer({ contactSectionRef }) {
     >
       <Container>
         <Row>
-          <Col>
+          <Col className="footer-col">
             <h2
               id="footer-title"
               className="hero-title text-align-left mt-5 pt-3 mobile-non-hero-title"
