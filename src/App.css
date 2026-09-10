@@ -202,8 +202,6 @@ a.nav-link {
   width: 32px;
   height: 32px;
   display: block;
-  /* filter: brightness(0) saturate(100%) invert(58%) sepia(92%) saturate(567%) */
-  /* hue-rotate(350deg) brightness(103%); */
 }
 
 .add-on-titles {
@@ -280,8 +278,8 @@ a.nav-link {
   mask-image: linear-gradient(
     to right,
     transparent,
-    black 10rem,
-    black calc(100% - 10rem),
+    black 5rem,
+    black calc(100% - 5rem),
     transparent
   );
 }
@@ -513,6 +511,9 @@ audio {
   line-height: 1.2;
 }
 
+.col {
+  min-height: 350px;
+}
 /* Micro-screen optimization (Screens under 319px) */
 @media (max-width: 319px) {
   .spotify-badge {
@@ -568,6 +569,15 @@ audio {
 
 /* TABLET AND SMALLER QUERIES */
 @media (max-width: 991px) {
+  .fadeout-horizontal {
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 2rem,
+      black calc(100% - 2rem),
+      transparent
+    );
+  }
   #about-section {
     margin-bottom: 25px;
   }

@@ -49,9 +49,6 @@ function Footer({ contactSectionRef }) {
             </a>
           </Col>
         </Row>
-        <Row>
-          <Col></Col>
-        </Row>
         <div>
           <p className="footer-text text-align-left mt-5 pt-3">
             &copy; 2026 Nichole Cruzalegui. All rights reserved.
