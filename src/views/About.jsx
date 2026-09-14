@@ -1,6 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { motion } from "motion/react";
 
 export default function About({ aboutSectionRef }) {
   return (
@@ -11,12 +12,16 @@ export default function About({ aboutSectionRef }) {
     >
       <Row>
         <Col>
-          <h2
+          <motion.h2
             id="about-title"
             className="hero-title text-navy-dark text-align-left mt-5 pt-2 mobile-non-hero-title"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6 }}
           >
             ABOUT
-          </h2>
+          </motion.h2>
           <p className="text-navy-dark mt-3">
             I've always been drawn to the intersection of creativity and
             technology. I built my first website in middle school, then went on

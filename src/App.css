@@ -511,6 +511,16 @@ audio {
   line-height: 1.2;
 }
 
+.text-reveal {
+  overflow: hidden;
+  /* display: inline-block; */
+  /* position: relative; */
+}
+
+.text-reveal h1 {
+  transform: translateY(100%);
+}
+
 /* Micro-screen optimization (Screens under 319px) */
 @media (max-width: 319px) {
   .spotify-badge {
