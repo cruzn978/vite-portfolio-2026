@@ -24,6 +24,7 @@ export default function Hero({ heroSectionRef }) {
                 transition={{
                   duration: 1.3,
                   ease: [0.22, 1, 0.36, 1],
+                  delay: 0.1,
                 }}
                 viewport={{ once: true }}
               >
@@ -40,7 +41,7 @@ export default function Hero({ heroSectionRef }) {
                 transition={{
                   duration: 1.3,
                   ease: [0.22, 1, 0.36, 1],
-                  delay: 0.17,
+                  delay: 0.2,
                 }}
                 viewport={{ once: true }}
               >
