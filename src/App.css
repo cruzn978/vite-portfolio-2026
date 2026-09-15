@@ -41,12 +41,13 @@
 .sticky-container {
   padding: 0px 20px 0px 20px;
   border-radius: 100px;
-  backdrop-filter: blur(25px);
+  backdrop-filter: blur(1px);
+  transition: background-color 0.7s ease;
 }
 
 .navbar-bg-dark {
   /* background-color: rgba(0, 0, 0, 0.259); */
-  background-color: #4a546fa3;
+  background-color: #4a546fe0;
 }
 
 .navbar {
@@ -835,5 +836,13 @@ audio {
 @media (max-width: 768px) and (min-height: 1300px) {
   .hero-container {
     min-height: 50vh !important;
+  }
+}
+
+/* TABLET IN LANDSCAPE */
+@media (max-height: 1000px) and (orientation: landscape) {
+  /* LAST P BEFORE MARQUEE */
+  #about-section > div > div > p:nth-child(5) {
+    margin-bottom: 100px;
   }
 }

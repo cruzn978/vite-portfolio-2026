@@ -1,6 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { motion } from "motion/react";
 
 function Footer({ contactSectionRef }) {
   return (
@@ -13,12 +14,16 @@ function Footer({ contactSectionRef }) {
       <Container>
         <Row>
           <Col className="footer-col">
-            <h2
+            <motion.h2
               id="footer-title"
               className="hero-title text-align-left mt-5 pt-3 mobile-non-hero-title"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.6 }}
             >
               Contact
-            </h2>
+            </motion.h2>
             <a href="mailto:cruzalegui.nichole@gmail.com" aria-label="Email">
               <h3 className="contact-options">email</h3>
             </a>

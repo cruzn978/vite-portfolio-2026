@@ -15,7 +15,7 @@ function StickyNavbar({
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 1) {
+      if (window.scrollY > 40) {
         setIsTransparent(false);
       } else {
         setIsTransparent(true);

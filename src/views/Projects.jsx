@@ -1,6 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { motion } from "motion/react";
 
 export default function Projects({ projectsSectionRef }) {
   return (
@@ -9,12 +10,16 @@ export default function Projects({ projectsSectionRef }) {
       className="hero-container projects-container"
       id="projects-section"
     >
-      <h2
+      <motion.h2
         id="projects-title"
         className="hero-title text-navy-dark mt-5 pt-2 mobile-non-hero-title"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.6 }}
       >
         PROJECTS
-      </h2>
+      </motion.h2>
 
       {/* PROJECT 1 */}
       <Row className="justify-content-center">

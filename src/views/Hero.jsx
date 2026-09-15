@@ -14,8 +14,39 @@ export default function Hero({ heroSectionRef }) {
       <Row className="hero-row">
         <Col className="">
           <h1 className="hero-title text-navy-dark justify-content-center">
-            <span className="text-navy-dark">NICHOLE</span> <br />
-            <span className="text-navy-dark">CRUZALEGUI</span>
+            <div style={{ overflow: "hidden" }}>
+              <motion.span
+                className="text-navy-dark"
+                style={{ display: "inline-block" }}
+                // start 100% below the viewport and animate to 0% (original position)
+                initial={{ y: "100%" }}
+                whileInView={{ y: 0 }}
+                transition={{
+                  duration: 1.3,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
+                viewport={{ once: true }}
+              >
+                NICHOLE
+              </motion.span>
+            </div>
+            <div className="overflow-hidden">
+              <motion.span
+                className="text-navy-dark"
+                style={{ display: "inline-block" }}
+                // start 100% below the viewport and animate to 0% (original position)
+                initial={{ y: "100%" }}
+                whileInView={{ y: 0 }}
+                transition={{
+                  duration: 1.3,
+                  ease: [0.22, 1, 0.36, 1],
+                  delay: 0.17,
+                }}
+                viewport={{ once: true }}
+              >
+                CRUZALEGUI
+              </motion.span>
+            </div>
           </h1>
         </Col>
       </Row>

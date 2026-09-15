@@ -1,6 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { motion } from "motion/react";
 
 export default function Extras({ extrasSectionRef }) {
   return (
@@ -11,12 +12,16 @@ export default function Extras({ extrasSectionRef }) {
     >
       <Row>
         <Col>
-          <h2
+          <motion.h2
             id="extras-title"
             className="hero-title text-navy-dark text-align-left mt-5 pt-3 mobile-non-hero-title"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6 }}
           >
             Extras
-          </h2>
+          </motion.h2>
           <p className="text-navy-dark mt-3">
             Like many people nowadays, I climb plastic rocks for fitness! I also
             climb real rocks outside.
